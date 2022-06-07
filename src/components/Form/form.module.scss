@@ -87,9 +87,11 @@
 
 .form {
   width: 100%;
-  height: 600px;
-  padding: 2rem;
-  background: #d5d5d5;
+  height: auto;
+  padding: 1rem;
+  background: #ebebeb;
+  border: none;
+  border-radius: 0.5rem;
 
   @media screen and (max-width: 480px) {
     height: auto;
