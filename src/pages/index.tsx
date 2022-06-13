@@ -15,8 +15,13 @@ export default function Home() {
       <Script
         type='text/javascript'
         src='https://d335luupugsy2.cloudfront.net/js/rdstation-forms/stable/rdstation-forms.min.js'
+        strategy='beforeInteractive'
       />
-      <Script type='text/javascript' src='/scripts/form.js' />
+      <Script
+        type='text/javascript'
+        src='/scripts/form.js'
+        strategy='beforeInteractive'
+      />
     </>
   );
 }
