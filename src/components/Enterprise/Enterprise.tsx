@@ -1,3 +1,5 @@
+import Image from 'next/image';
+import Link from 'next/link';
 import styles from './enterprise.module.scss';
 
 export function Enterprise() {
@@ -5,7 +7,14 @@ export function Enterprise() {
     <section className={styles.S__Enterprise}>
       <main className={styles.mainContent}>
         <div className={styles.image}>
-          <img src='/images/ad_rede.jpg' alt='Rede Inova informações' />
+          <Image
+            src='/images/ad_rede.jpg'
+            alt='Rede Inova informações'
+            width={650}
+            height={650}
+            quality={100}
+            objectFit='cover'
+          />
         </div>
         <div className={styles.description}>
           <h2>#VEMSERINOVA</h2>
@@ -21,13 +30,13 @@ export function Enterprise() {
           </p>
         </div>
       </main>
-      <a
+      <Link
         className={styles.buttonConsultor}
         href='https://api.whatsapp.com/send?phone=553332713016'
         target='_self'
       >
         Fale com nosso consultor
-      </a>
+      </Link>
     </section>
   );
 }
